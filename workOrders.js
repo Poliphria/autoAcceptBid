@@ -13,7 +13,7 @@ const interval = setInterval(function(){
     else {
         console.log('work order clicked!')
     }
-}, 7000)
+}, 3000)
 
 /**
  * Checks if the object passed into the function is empty 
