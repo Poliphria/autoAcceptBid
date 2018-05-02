@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2, 
+    "name": "Test Extension",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "file:///C:/Users/wbrit/Desktop/List.html",
+                "file:///C:/Users/wbrit/Desktop/Empty_List.html", 
+                "https://ah4r.peakportals.com/Modules/List.aspx?cm=2649ca58-b290-e611-8118-3863bb366078"
+            ],
+            "js": ["workOrders.js"]
+        },
+        {
+            "matches": [
+                "https://ah4r.peakportals.com/Modules/Update.aspx*"
+            ],
+            "js": ["acceptOrder.js"]
+        }
+    ]
+}
